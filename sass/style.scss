@@ -1,13 +1,28 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
 @import 'variables';
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 html {
     body{
-        background: rgb(215, 219, 223);
+        // background: rgb(215, 219, 223);
+        .jumbotron {
+            background: none;
+            padding: 2rem;
+            img{
+                max-width: 100px;
+                max-height: 112px;
+                float: right;
+            }
+            h1{
+                padding-top: 1rem;
+            }
+        }
         #page {
             box-shadow: $shadow;
             background-color: $white;
             padding: 0;
+            .content {
+                padding: 5%;
+            }
         }
     }
 }
