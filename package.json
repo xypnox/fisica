@@ -1,0 +1,25 @@
+{
+  "name": "fisica",
+  "version": "1.0.0",
+  "description": "A project redesign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xypnox/fisica.git"
+  },
+  "keywords": [
+    "design"
+  ],
+  "author": "xypnox",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/xypnox/fisica/issues"
+  },
+  "homepage": "https://github.com/xypnox/fisica#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  }
+}

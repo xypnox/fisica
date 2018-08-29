@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'variables';
+
+html {
+    body{
+        background: rgb(215, 219, 223);
+        #page {
+            box-shadow: $shadow;
+            background-color: $white;
+            padding: 0;
+        }
+    }
+}
