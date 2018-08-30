@@ -35,7 +35,7 @@ html {
                     padding: 0.5rem 1rem;
                 }
                 li.active{
-                    border-bottom: 4px $white solid;
+                    font-weight: bold;
                 }
                 .btn-outline-success {
                     background-color: none;
@@ -102,7 +102,7 @@ html {
     }
 }
 .sticky {
-    box-shadow: $shadow;
+    box-shadow: $shadow-darker;
     position: fixed;
     width: 100%;
     left: 0;
