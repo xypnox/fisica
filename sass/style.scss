@@ -31,7 +31,7 @@ html {
                 li {
                     padding: 0.5rem;
                 }
-                form {
+                form, .navbar-brand {
                     padding: 0.5rem 1rem;
                 }
                 li.active{
@@ -103,10 +103,4 @@ html {
 }
 .sticky {
     box-shadow: $shadow-darker;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
 }
