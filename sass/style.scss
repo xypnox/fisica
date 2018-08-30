@@ -1,10 +1,15 @@
-@import 'variables';
-@import "../node_modules/bootstrap/scss/bootstrap";
 
+$body-bg: #f6f9fc;
+$body-color: #111;
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Open+Sans:400,400i,700');
 html {
     body{
+        font-family: "Open Sans";
         // background: rgb(215, 219, 223);
         .jumbotron {
+            font-family: "Crimson Text", serif;
             background: none;
             padding: 2rem;
             img{
@@ -17,12 +22,91 @@ html {
             }
         }
         #page {
+            nav {
+                .navbar-toggler {
+                    margin: 0.5rem;
+                }
+                padding: 0;
+                background: $main-color !important;
+                li {
+                    padding: 0.5rem;
+                }
+                form {
+                    padding: 0.5rem 1rem;
+                }
+                li.active{
+                    border-bottom: 4px $white solid;
+                }
+                .btn-outline-success {
+                    background-color: none;
+                    border-color: $white;
+                    color: $white;
+                    &:hover {
+                        background-color: $white;
+                        color: $main-color;
+                    }
+                }
+                .dropdown-menu {
+                    box-shadow: $shadow-dark;
+                }
+                .dropdown-item {
+                    &:hover {
+                        background: $main-color;
+                        color: $white;
+                    }
+                }
+            }
             box-shadow: $shadow;
+            border-bottom: 8px solid $main-light;
             background-color: $white;
             padding: 0;
             .content {
                 padding: 5%;
+                h1, h2, h3 {
+                    font-family: "Crimson Text", serif;
+                }
+            }
+            .link-section {
+                h4{
+                    border-bottom: 4px solid $main-color;
+                }
+                ul {
+                    li.list-group-item {
+                        border: none;
+                        padding: 0.25rem;
+                        background: none;
+                    }
+                }
+            }
+
+            .footer-links {
+                color: $white;
+                background-color: $main-color;
+                .address{
+                    p {
+                        margin: 0;
+                    }
+                }
+                ul {
+                    li.list-group-item {
+                        border: none;
+                        padding: 0.25rem;
+                        background: none;
+                        a{
+                            color: $white;
+                        }
+                    }
+                }
             }
         }
     }
+}
+.sticky {
+    box-shadow: $shadow;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
 }

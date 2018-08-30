@@ -7,21 +7,21 @@ $cyan: rgb(71, 221, 216);
 $teal: rgb(75, 236, 154);
 $yellow: rgb(245, 231, 106);
 
+$main-color: #4186D4;
 
 $white: rgb(255, 255, 255);
-$light: rgb(230, 230, 230);
+$light: #c5d1dd;
 $light-grey: rgb(200, 200, 200);
 $grey: rgb(175, 175, 175);
 $dark-grey: rgb(46, 48, 50);
 $dark: rgb(30, 37, 45);
 
-$main-color: $blue;
+$main-dark: darken($main-color, 20%);
+$main-light: lighten($main-color, 10%);
 
 $shadow: 0 15px 35px rgba(50,50,93,.15),0 5px 15px rgba(0,0,0,.1);
-$shadow-dark: rgba(0, 0, 0, 0.5);
+$shadow-dark: 0 10px 25px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
 
-$body-bg: #f6f9fc;
-$body-color: #111;
 
 $font-sans: "Raleway", "Open Sans", "Roboto", sans;
 $font-color: $dark-grey;
